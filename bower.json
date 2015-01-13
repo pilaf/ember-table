@@ -46,5 +46,9 @@
         "themes/base/jquery-ui.css"
       ]
     }
+  },
+  "resolutions": {
+    "handlebars": "2.0.0",
+    "ember": "beta"
   }
 }
