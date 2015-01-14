@@ -121,7 +121,7 @@ Ember.View.extend Ember.AddeparMixins.StyleBindingsMixin,
 
 Ember.Table.HeaderBlock = Ember.Table.TableBlock.extend
   classNames:    ['ember-table-header-block']
-  itemViewClass: 'Ember.Table.HeaderRow'
+  itemViewClass: 'em-table-header-row'
 
   content: Ember.computed ->
     [@get('columns')]

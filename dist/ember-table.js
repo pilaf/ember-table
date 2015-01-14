@@ -14,7 +14,7 @@ var _ref;
 Ember.TEMPLATES["body-container"] = Ember.Handlebars.template({"1":function(depth0,helpers,partials,data) {
   var escapeExpression=this.escapeExpression, buffer = '';
   data.buffer.push("        ");
-  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.Table.LazyTableBlock", {"name":"view","hash":{
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "em-table-lazy-table-block", {"name":"view","hash":{
     'startIndexBinding': ("controller._startIndex"),
     'scrollTopBinding': ("controller._scrollTop"),
     'numItemsShowingBinding': ("controller._numItemsShowing"),
@@ -22,7 +22,7 @@ Ember.TEMPLATES["body-container"] = Ember.Handlebars.template({"1":function(dept
     'columnsBinding': ("controller.fixedColumns"),
     'contentBinding': ("controller.bodyContent"),
     'classNames': ("ember-table-left-table-block")
-  },"hashTypes":{'startIndexBinding': "STRING",'scrollTopBinding': "STRING",'numItemsShowingBinding': "STRING",'widthBinding': "STRING",'columnsBinding': "STRING",'contentBinding': "STRING",'classNames': "STRING"},"hashContexts":{'startIndexBinding': depth0,'scrollTopBinding': depth0,'numItemsShowingBinding': depth0,'widthBinding': depth0,'columnsBinding': depth0,'contentBinding': depth0,'classNames': depth0},"types":["ID"],"contexts":[depth0],"data":data})));
+  },"hashTypes":{'startIndexBinding': "STRING",'scrollTopBinding': "STRING",'numItemsShowingBinding': "STRING",'widthBinding': "STRING",'columnsBinding': "STRING",'contentBinding': "STRING",'classNames': "STRING"},"hashContexts":{'startIndexBinding': depth0,'scrollTopBinding': depth0,'numItemsShowingBinding': depth0,'widthBinding': depth0,'columnsBinding': depth0,'contentBinding': depth0,'classNames': depth0},"types":["STRING"],"contexts":[depth0],"data":data})));
   data.buffer.push("\n");
   return buffer;
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
@@ -31,7 +31,7 @@ Ember.TEMPLATES["body-container"] = Ember.Handlebars.template({"1":function(dept
   stack1 = helpers['if'].call(depth0, "controller.numFixedColumns", {"name":"if","hash":{},"hashTypes":{},"hashContexts":{},"fn":this.program(1, data),"inverse":this.noop,"types":["ID"],"contexts":[depth0],"data":data});
   if (stack1 != null) { data.buffer.push(stack1); }
   data.buffer.push("      ");
-  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.Table.LazyTableBlock", {"name":"view","hash":{
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "em-table-lazy-table-block", {"name":"view","hash":{
     'startIndexBinding': ("controller._startIndex"),
     'scrollTopBinding': ("controller._scrollTop"),
     'numItemsShowingBinding': ("controller._numItemsShowing"),
@@ -40,34 +40,34 @@ Ember.TEMPLATES["body-container"] = Ember.Handlebars.template({"1":function(dept
     'columnsBinding': ("controller.tableColumns"),
     'contentBinding': ("controller.bodyContent"),
     'classNames': ("ember-table-right-table-block")
-  },"hashTypes":{'startIndexBinding': "STRING",'scrollTopBinding': "STRING",'numItemsShowingBinding': "STRING",'widthBinding': "STRING",'scrollLeftBinding': "STRING",'columnsBinding': "STRING",'contentBinding': "STRING",'classNames': "STRING"},"hashContexts":{'startIndexBinding': depth0,'scrollTopBinding': depth0,'numItemsShowingBinding': depth0,'widthBinding': depth0,'scrollLeftBinding': depth0,'columnsBinding': depth0,'contentBinding': depth0,'classNames': depth0},"types":["ID"],"contexts":[depth0],"data":data})));
-  data.buffer.push("\n    </div>\n  </div>\n</div>");
+  },"hashTypes":{'startIndexBinding': "STRING",'scrollTopBinding': "STRING",'numItemsShowingBinding': "STRING",'widthBinding': "STRING",'scrollLeftBinding': "STRING",'columnsBinding': "STRING",'contentBinding': "STRING",'classNames': "STRING"},"hashContexts":{'startIndexBinding': depth0,'scrollTopBinding': depth0,'numItemsShowingBinding': depth0,'widthBinding': depth0,'scrollLeftBinding': depth0,'columnsBinding': depth0,'contentBinding': depth0,'classNames': depth0},"types":["STRING"],"contexts":[depth0],"data":data})));
+  data.buffer.push("\n    </div>\n  </div>\n</div>\n");
   return buffer;
 },"useData":true});
 
 Ember.TEMPLATES["components/ember-table"] = Ember.Handlebars.template({"1":function(depth0,helpers,partials,data) {
   var escapeExpression=this.escapeExpression, buffer = '';
   data.buffer.push("  ");
-  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.Table.HeaderTableContainer", {"name":"view","hash":{},"hashTypes":{},"hashContexts":{},"types":["ID"],"contexts":[depth0],"data":data})));
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "em-table-header-table-container", {"name":"view","hash":{},"hashTypes":{},"hashContexts":{},"types":["STRING"],"contexts":[depth0],"data":data})));
   data.buffer.push("\n");
   return buffer;
 },"3":function(depth0,helpers,partials,data) {
   var escapeExpression=this.escapeExpression, buffer = '';
   data.buffer.push("  ");
-  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.Table.FooterTableContainer", {"name":"view","hash":{},"hashTypes":{},"hashContexts":{},"types":["ID"],"contexts":[depth0],"data":data})));
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "em-table-footer-table-container", {"name":"view","hash":{},"hashTypes":{},"hashContexts":{},"types":["STRING"],"contexts":[depth0],"data":data})));
   data.buffer.push("\n");
   return buffer;
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
   var stack1, escapeExpression=this.escapeExpression, buffer = '';
   stack1 = helpers['if'].call(depth0, "controller.hasHeader", {"name":"if","hash":{},"hashTypes":{},"hashContexts":{},"fn":this.program(1, data),"inverse":this.noop,"types":["ID"],"contexts":[depth0],"data":data});
   if (stack1 != null) { data.buffer.push(stack1); }
-  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.Table.BodyTableContainer", {"name":"view","hash":{},"hashTypes":{},"hashContexts":{},"types":["ID"],"contexts":[depth0],"data":data})));
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "em-table-body-table-container", {"name":"view","hash":{},"hashTypes":{},"hashContexts":{},"types":["STRING"],"contexts":[depth0],"data":data})));
   data.buffer.push("\n");
   stack1 = helpers['if'].call(depth0, "controller.hasFooter", {"name":"if","hash":{},"hashTypes":{},"hashContexts":{},"fn":this.program(3, data),"inverse":this.noop,"types":["ID"],"contexts":[depth0],"data":data});
   if (stack1 != null) { data.buffer.push(stack1); }
-  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.Table.ScrollContainer", {"name":"view","hash":{},"hashTypes":{},"hashContexts":{},"types":["ID"],"contexts":[depth0],"data":data})));
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "em-table-scroll-container", {"name":"view","hash":{},"hashTypes":{},"hashContexts":{},"types":["STRING"],"contexts":[depth0],"data":data})));
   data.buffer.push("\n");
-  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.Table.ColumnSortableIndicator", {"name":"view","hash":{},"hashTypes":{},"hashContexts":{},"types":["ID"],"contexts":[depth0],"data":data})));
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "em-table-column-sortable-indicator", {"name":"view","hash":{},"hashTypes":{},"hashContexts":{},"types":["STRING"],"contexts":[depth0],"data":data})));
   data.buffer.push("\n");
   return buffer;
 },"useData":true});
@@ -75,13 +75,13 @@ Ember.TEMPLATES["components/ember-table"] = Ember.Handlebars.template({"1":funct
 Ember.TEMPLATES["footer-container"] = Ember.Handlebars.template({"1":function(depth0,helpers,partials,data) {
   var escapeExpression=this.escapeExpression, buffer = '';
   data.buffer.push("    ");
-  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.Table.TableBlock", {"name":"view","hash":{
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "em-table-table-block", {"name":"view","hash":{
     'heightBinding': ("controller.footerHeight"),
     'widthBinding': ("controller._fixedBlockWidth"),
     'columnsBinding': ("controller.fixedColumns"),
     'contentBinding': ("controller.footerContent"),
     'classNames': ("ember-table-left-table-block")
-  },"hashTypes":{'heightBinding': "STRING",'widthBinding': "STRING",'columnsBinding': "STRING",'contentBinding': "STRING",'classNames': "STRING"},"hashContexts":{'heightBinding': depth0,'widthBinding': depth0,'columnsBinding': depth0,'contentBinding': depth0,'classNames': depth0},"types":["ID"],"contexts":[depth0],"data":data})));
+  },"hashTypes":{'heightBinding': "STRING",'widthBinding': "STRING",'columnsBinding': "STRING",'contentBinding': "STRING",'classNames': "STRING"},"hashContexts":{'heightBinding': depth0,'widthBinding': depth0,'columnsBinding': depth0,'contentBinding': depth0,'classNames': depth0},"types":["STRING"],"contexts":[depth0],"data":data})));
   data.buffer.push("\n");
   return buffer;
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
@@ -90,14 +90,14 @@ Ember.TEMPLATES["footer-container"] = Ember.Handlebars.template({"1":function(de
   stack1 = helpers['if'].call(depth0, "controller.numFixedColumns", {"name":"if","hash":{},"hashTypes":{},"hashContexts":{},"fn":this.program(1, data),"inverse":this.noop,"types":["ID"],"contexts":[depth0],"data":data});
   if (stack1 != null) { data.buffer.push(stack1); }
   data.buffer.push("  ");
-  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.Table.TableBlock", {"name":"view","hash":{
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "em-table-table-block", {"name":"view","hash":{
     'heightBinding': ("controller.footerHeight"),
     'widthBinding': ("controller._tableBlockWidth"),
     'scrollLeftBinding': ("controller._tableScrollLeft"),
     'columnsBinding': ("controller.tableColumns"),
     'contentBinding': ("controller.footerContent"),
     'classNames': ("ember-table-right-table-block")
-  },"hashTypes":{'heightBinding': "STRING",'widthBinding': "STRING",'scrollLeftBinding': "STRING",'columnsBinding': "STRING",'contentBinding': "STRING",'classNames': "STRING"},"hashContexts":{'heightBinding': depth0,'widthBinding': depth0,'scrollLeftBinding': depth0,'columnsBinding': depth0,'contentBinding': depth0,'classNames': depth0},"types":["ID"],"contexts":[depth0],"data":data})));
+  },"hashTypes":{'heightBinding': "STRING",'widthBinding': "STRING",'scrollLeftBinding': "STRING",'columnsBinding': "STRING",'contentBinding': "STRING",'classNames': "STRING"},"hashContexts":{'heightBinding': depth0,'widthBinding': depth0,'scrollLeftBinding': depth0,'columnsBinding': depth0,'contentBinding': depth0,'classNames': depth0},"types":["STRING"],"contexts":[depth0],"data":data})));
   data.buffer.push("\n</div>\n");
   return buffer;
 },"useData":true});
@@ -116,12 +116,12 @@ Ember.TEMPLATES["header-cell"] = Ember.Handlebars.template({"compiler":[6,">= 2.
 Ember.TEMPLATES["header-container"] = Ember.Handlebars.template({"1":function(depth0,helpers,partials,data) {
   var escapeExpression=this.escapeExpression, buffer = '';
   data.buffer.push("    ");
-  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.Table.HeaderBlock", {"name":"view","hash":{
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "em-table-header-block", {"name":"view","hash":{
     'heightBinding': ("controller.headerHeight"),
     'widthBinding': ("controller._fixedBlockWidth"),
     'columnsBinding': ("controller.fixedColumns"),
     'classNames': ("ember-table-left-table-block")
-  },"hashTypes":{'heightBinding': "STRING",'widthBinding': "STRING",'columnsBinding': "STRING",'classNames': "STRING"},"hashContexts":{'heightBinding': depth0,'widthBinding': depth0,'columnsBinding': depth0,'classNames': depth0},"types":["ID"],"contexts":[depth0],"data":data})));
+  },"hashTypes":{'heightBinding': "STRING",'widthBinding': "STRING",'columnsBinding': "STRING",'classNames': "STRING"},"hashContexts":{'heightBinding': depth0,'widthBinding': depth0,'columnsBinding': depth0,'classNames': depth0},"types":["STRING"],"contexts":[depth0],"data":data})));
   data.buffer.push("\n");
   return buffer;
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
@@ -130,24 +130,24 @@ Ember.TEMPLATES["header-container"] = Ember.Handlebars.template({"1":function(de
   stack1 = helpers['if'].call(depth0, "controller.numFixedColumns", {"name":"if","hash":{},"hashTypes":{},"hashContexts":{},"fn":this.program(1, data),"inverse":this.noop,"types":["ID"],"contexts":[depth0],"data":data});
   if (stack1 != null) { data.buffer.push(stack1); }
   data.buffer.push("  ");
-  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.Table.HeaderBlock", {"name":"view","hash":{
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "em-table-header-block", {"name":"view","hash":{
     'heightBinding': ("controller.headerHeight"),
     'widthBinding': ("controller._tableBlockWidth"),
     'scrollLeftBinding': ("controller._tableScrollLeft"),
     'columnsBinding': ("controller.tableColumns"),
     'classNames': ("ember-table-right-table-block")
-  },"hashTypes":{'heightBinding': "STRING",'widthBinding': "STRING",'scrollLeftBinding': "STRING",'columnsBinding': "STRING",'classNames': "STRING"},"hashContexts":{'heightBinding': depth0,'widthBinding': depth0,'scrollLeftBinding': depth0,'columnsBinding': depth0,'classNames': depth0},"types":["ID"],"contexts":[depth0],"data":data})));
+  },"hashTypes":{'heightBinding': "STRING",'widthBinding': "STRING",'scrollLeftBinding': "STRING",'columnsBinding': "STRING",'classNames': "STRING"},"hashContexts":{'heightBinding': depth0,'widthBinding': depth0,'scrollLeftBinding': depth0,'columnsBinding': depth0,'classNames': depth0},"types":["STRING"],"contexts":[depth0],"data":data})));
   data.buffer.push("\n</div>\n");
   return buffer;
 },"useData":true});
 
 Ember.TEMPLATES["header-row"] = Ember.Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
   var escapeExpression=this.escapeExpression, buffer = '';
-  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.MultiItemViewCollectionView", {"name":"view","hash":{
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "multi-item-view-collection", {"name":"view","hash":{
     'widthBinding': ("controller._tableColumnsWidth"),
     'itemViewClassField': ("headerCellViewClass"),
     'contentBinding': ("view.content")
-  },"hashTypes":{'widthBinding': "STRING",'itemViewClassField': "STRING",'contentBinding': "STRING"},"hashContexts":{'widthBinding': depth0,'itemViewClassField': depth0,'contentBinding': depth0},"types":["ID"],"contexts":[depth0],"data":data})));
+  },"hashTypes":{'widthBinding': "STRING",'itemViewClassField': "STRING",'contentBinding': "STRING"},"hashContexts":{'widthBinding': depth0,'itemViewClassField': depth0,'contentBinding': depth0},"types":["STRING"],"contexts":[depth0],"data":data})));
   data.buffer.push("\n");
   return buffer;
 },"useData":true});
@@ -155,7 +155,7 @@ Ember.TEMPLATES["header-row"] = Ember.Handlebars.template({"compiler":[6,">= 2.0
 Ember.TEMPLATES["scroll-container"] = Ember.Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
   var escapeExpression=this.escapeExpression, buffer = '';
   data.buffer.push("<div class=\"antiscroll-wrap\">\n  <div class=\"antiscroll-inner\">\n    ");
-  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.Table.ScrollPanel", {"name":"view","hash":{},"hashTypes":{},"hashContexts":{},"types":["ID"],"contexts":[depth0],"data":data})));
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "em-table-scroll-panel", {"name":"view","hash":{},"hashTypes":{},"hashContexts":{},"types":["STRING"],"contexts":[depth0],"data":data})));
   data.buffer.push("\n  </div>\n</div>\n");
   return buffer;
 },"useData":true});
@@ -171,12 +171,12 @@ Ember.TEMPLATES["table-cell"] = Ember.Handlebars.template({"compiler":[6,">= 2.0
 
 Ember.TEMPLATES["table-row"] = Ember.Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
   var escapeExpression=this.escapeExpression, buffer = '';
-  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.MultiItemViewCollectionView", {"name":"view","hash":{
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "multi-item-view-collection", {"name":"view","hash":{
     'widthBinding': ("controller._tableColumnsWidth"),
     'itemViewClassField': ("tableCellViewClass"),
     'contentBinding': ("view.columns"),
     'rowBinding': ("view.row")
-  },"hashTypes":{'widthBinding': "STRING",'itemViewClassField': "STRING",'contentBinding': "STRING",'rowBinding': "STRING"},"hashContexts":{'widthBinding': depth0,'itemViewClassField': depth0,'contentBinding': depth0,'rowBinding': depth0},"types":["ID"],"contexts":[depth0],"data":data})));
+  },"hashTypes":{'widthBinding': "STRING",'itemViewClassField': "STRING",'contentBinding': "STRING",'rowBinding': "STRING"},"hashContexts":{'widthBinding': depth0,'itemViewClassField': depth0,'contentBinding': depth0,'rowBinding': depth0},"types":["STRING"],"contexts":[depth0],"data":data})));
   data.buffer.push("\n");
   return buffer;
 },"useData":true});
@@ -780,7 +780,7 @@ Ember.Table.TableCell = Ember.View.extend(Ember.AddeparMixins.StyleBindingsMixin
 
 Ember.Table.HeaderBlock = Ember.Table.TableBlock.extend({
   classNames: ['ember-table-header-block'],
-  itemViewClass: 'Ember.Table.HeaderRow',
+  itemViewClass: 'em-table-header-row',
   content: Ember.computed(function() {
     return [this.get('columns')];
   }).property('columns')
@@ -1491,6 +1491,27 @@ Ember.Table.EmberTableComponent = Ember.Component.extend(Ember.AddeparMixins.Sty
 });
 
 Ember.Handlebars.helper('table-component', Ember.Table.EmberTableComponent);
+
+
+})();
+(function() {
+
+Ember.Application.initializer({
+  name: 'em-table',
+  initialize: function(c) {
+    c.register('view:em-table-header-table-container', Ember.Table.HeaderTableContainer);
+    c.register('view:em-table-body-table-container', Ember.Table.BodyTableContainer);
+    c.register('view:em-table-footer-table-container', Ember.Table.FooterTableContainer);
+    c.register('view:em-table-scroll-container', Ember.Table.ScrollContainer);
+    c.register('view:em-table-scroll-panel', Ember.Table.ScrollPanel);
+    c.register('view:em-table-column-sortable-indicator', Ember.Table.ColumnSortableIndicator);
+    c.register('view:em-table-lazy-table-block', Ember.Table.LazyTableBlock);
+    c.register('view:em-table-table-block', Ember.Table.TableBlock);
+    c.register('view:em-table-header-block', Ember.Table.HeaderBlock);
+    c.register('view:em-table-header-row', Ember.Table.HeaderRow);
+    return c.register('view:multi-item-view-collection', Ember.MultiItemViewCollectionView);
+  }
+});
 
 
 })();
